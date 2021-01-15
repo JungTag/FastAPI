@@ -18,7 +18,7 @@ class Config:
 @dataclass
 class LocalConfig(Config):
     PROJ_RELOAD: bool = True
-
+    DB_URL: str = "mysql+pymysql://root:xxxx@localhost:3306/notification_api?charset=utf8mb4" # 어떤 DB/ 어떤 드라이버를 쓸 것인가
 
 @dataclass
 class ProdConfig(Config):
